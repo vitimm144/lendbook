@@ -33,7 +33,7 @@ export class CreateBookLoanTable1600610054902 implements MigrationInterface {
                 }
             ]
         }), true);
-    
+
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {

@@ -14,6 +14,11 @@ export class CreateUserTable1600610018972 implements MigrationInterface {
                     generationStrategy: "uuid"
                 },
                 {
+                    name: "name",
+                    type: "varchar",
+                    isNullable: false
+                },
+                {
                     name: "email",
                     type: "varchar",
                     isNullable: false,
@@ -22,23 +27,9 @@ export class CreateUserTable1600610018972 implements MigrationInterface {
                 {
                     name: "createdAt",
                     type: "datetime",
+                    default: "CURRENT_TIMESTAMP",
                     isNullable: false
-                },
-                {
-                    name: "collection",
-                    type: "text",
-                    isNullable: true
-                },
-                {
-                    name: "lentBooks",
-                    type: "text",
-                    isNullable: true
-                },
-                {
-                    name: "borrowedBooks",
-                    type: "text",
-                    isNullable: true
-                },
+                }
             ]
         }), true);
 

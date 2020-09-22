@@ -1,29 +1,26 @@
 import {
-    BaseEntity,
     Column,
+    ObjectIdColumn,
+    ObjectID,
     Entity,
-    PrimaryGeneratedColumn,
 } from "typeorm";
 
-@Entity('book_loan')
-export class BookLoan extends BaseEntity{
+@Entity()
+export class BookLoan {
 
-    @PrimaryGeneratedColumn("uuid")
-    id!: string;
-
-    @Column()
-    email!: string;
+    @ObjectIdColumn()
+    id!: ObjectID;
 
     @Column()
-    createdAt!: Date;
+    fromUser!: string;
 
     @Column()
-    collection!: string;
+    toUser!: string;
 
     @Column()
-    lentBooks!: string;
+    lentAt!: Date;
 
     @Column()
-    borrowedBooks!: string;
+    returnedAt!: Date;
 
 }

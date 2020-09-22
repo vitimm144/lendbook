@@ -1,15 +1,15 @@
 import {
-    BaseEntity,
     Column,
     Entity,
-    PrimaryGeneratedColumn,
+    ObjectIdColumn,
+    ObjectID,
 } from "typeorm";
 
-@Entity('book')
-export class Book extends BaseEntity{
+@Entity()
+export class Book {
 
-    @PrimaryGeneratedColumn("uuid")
-    id!: string;
+    @ObjectIdColumn()
+    id!: ObjectID;
 
     @Column()
     title!: string;
