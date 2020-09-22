@@ -1,4 +1,4 @@
-import {User} from '../db/models/User.model'
+import {User} from '../db/models/User.models'
 import {Book} from '../db/models/Book.models'
 import {BookLoan} from '../db/models/BookLoan.models'
 

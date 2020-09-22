@@ -12,7 +12,7 @@ export let connect = async () => {
             "logging": true,
             "migrationsTableName": "custom_migration_table",
             "entities": [
-                __dirname + '/models/*.js'
+                __dirname + '/models/*.models.ts'
             ],
             "migrations": [
                 __dirname + '/migrations/*.js'
